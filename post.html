@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning to Slow Down</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Personal Blog</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="create-post.html">Create Post</a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="single-post">
+            <a class="back-link" href="index.html">← Back to all posts</a>
+
+            <p class="post-date">October 18, 2026</p>
+
+            <h2>Learning to Slow Down</h2>
+
+            <div class="tags">
+                <a href="#">Life</a>
+                <a href="#">Thoughts</a>
+            </div>
+
+            <div class="post-body">
+                <p>
+                    Sometimes productivity is not about doing more,
+                    but about giving yourself enough space to think.
+                </p>
+
+                <p>
+                    I used to think that a good day had to be filled with tasks,
+                    plans and visible progress. If I slowed down, it felt like I
+                    was wasting time.
+                </p>
+
+                <p>
+                    Lately I have started to notice that some of my best ideas
+                    appear when I am not actively trying to be productive.
+                    A quiet walk, making coffee, or just sitting without doing
+                    anything can sometimes create more clarity than another
+                    hour in front of a screen.
+                </p>
+            </div>
+
+            <a class="edit-link" href="create-post.html">Edit post</a>
+        </article>
+
+        <section class="comments-section">
+            <div class="section-heading">
+                <h2>Comments</h2>
+
+                <button id="toggle-comment-form" type="button">
+                    Add Comment
+                </button>
+            </div>
+
+            <article class="comment">
+                <h3>This really resonated with me</h3>
+                <p class="post-date">October 18, 2026</p>
+                <p>
+                    I have been trying to remind myself of the same thing lately.
+                    Rest is sometimes part of the work too.
+                </p>
+            </article>
+
+            <article class="comment">
+                <h3>A good reminder</h3>
+                <p class="post-date">October 19, 2026</p>
+                <p>
+                    It is easy to forget this when everything around us feels so fast.
+                </p>
+            </article>
+
+            <form id="comment-form" class="comment-form hidden">
+                <h3>Add a Comment</h3>
+
+                <label for="comment-title">Title</label>
+                <input
+                    type="text"
+                    id="comment-title"
+                    name="comment-title"
+                    required
+                >
+
+                <label for="comment-text">Comment</label>
+                <textarea
+                    id="comment-text"
+                    name="comment-text"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit">Post Comment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Personal Blog © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
