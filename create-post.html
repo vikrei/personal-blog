@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Personal Blog</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="create-post.html">Create Post</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-page">
+            <p class="eyebrow">New entry</p>
+            <h2>Create a New Post</h2>
+
+            <form id="post-form">
+
+                <label for="post-title">Title</label>
+                <input
+                    type="text"
+                    id="post-title"
+                    name="post-title"
+                    placeholder="Enter a title"
+                    required
+                >
+
+                <label for="post-body">Post</label>
+                <textarea
+                    id="post-body"
+                    name="post-body"
+                    rows="12"
+                    placeholder="Start writing..."
+                    required
+                ></textarea>
+
+                <label for="post-tags">Tags</label>
+                <input
+                    type="text"
+                    id="post-tags"
+                    name="post-tags"
+                    placeholder="life, thoughts, creativity"
+                >
+
+                <p class="form-help">
+                    Separate tags with commas.
+                </p>
+
+                <div class="form-actions">
+                    <a class="cancel-link" href="index.html">Cancel</a>
+                    <button type="submit">Publish Post</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Personal Blog © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
